@@ -262,6 +262,34 @@ const SkillsSection = () => {
     );
 };
 
+const Footer = ()=>{
+    return(
+        <footer>
+            <div className="py-28 px-6 sm:px-8 bg-neutral-950 overflow-hidden text-white text-center">
+                <h1 className="text-4xl font-serif">Thank You For Your Time :)</h1>
+                 <div className='flex items-center justify-center gap-5'>
+                        <AnimatedComponent delay={400} className="mt-10">
+                <a  onClick={e=>window.location.href="https://drive.google.com/file/d/19WTlZ0dz4bZdF_dVQ35qaZ41f384nM9q/view?usp=sharing"} className="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white bg-transparent border-2 border-white rounded-full overflow-hidden transition-all duration-300 hover:text-black">
+                    <span className="absolute inset-0 w-full h-full bg-white transition-all duration-300 transform scale-x-0 group-hover:scale-x-100 origin-left"></span>
+                    <span className="relative z-10 flex items-center gap-2">Grab My Resume!! <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" /></span>
+                </a>
+            </AnimatedComponent>
+
+ <AnimatedComponent delay={400} className="mt-10">
+                <a  onClick={e=>window.location.href="mailto:mdrayaanpasha@gmail.com"} className="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white bg-transparent border-2 border-white rounded-full overflow-hidden transition-all duration-300 hover:text-black">
+                    <span className="absolute inset-0 w-full h-full bg-white transition-all duration-300 transform scale-x-0 group-hover:scale-x-100 origin-left"></span>
+                    <span className="relative z-10 flex items-center gap-2">Email Me!! <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" /></span>
+                </a>
+            </AnimatedComponent>
+
+
+            
+            </div>
+            </div>
+        </footer>
+    )
+}
+
 
 
 
@@ -302,8 +330,12 @@ export default function App() {
             <style>{`
                 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@700&display=swap');
                 
-                :root { --background: #0f0f0f; --text: #f3f3f3; }
-                html { scroll-behavior: smooth; }
+                :root { 
+                --background: #0f0f0f; --text: #f3f3f3;
+                 }
+                html { 
+                scroll-behavior: smooth;
+                }
                 body {
                     font-family: 'Inter', sans-serif;
                     background-color: var(--background);
@@ -312,9 +344,15 @@ export default function App() {
                     -moz-osx-font-smoothing: grayscale;
                     cursor: none;
                 }
-                .font-serif-display { font-family: 'Playfair Display', serif; }
-                a, button, summary { cursor: none; }
-                ::selection { background-color: #ca8a04; color: #000; }
+                .font-serif-display {
+                 font-family: 'Playfair Display', serif; 
+                 }
+                a, button, summary { 
+                cursor: none; 
+                }
+                ::selection {
+                 background-color: #ca8a04; color: #000; 
+                 }
 
                 .custom-cursor {
                     position: fixed; top: -5px; left: -5px; width: 10px; height: 10px; background-color: white; border-radius: 50%;
@@ -322,8 +360,12 @@ export default function App() {
                     transition: transform 0.2s ease-out, width 0.3s ease, height 0.3s ease, background-color 0.3s ease;
                     display: none;
                 }
-                 @media (pointer: fine) { .custom-cursor { display: block; } }
-                .custom-cursor.cursor-hover { width: 50px; height: 50px; background-color: rgba(255,255,255,0.2); }
+                 @media (pointer: fine) {
+                  .custom-cursor { display: block; }
+                   }
+                .custom-cursor.cursor-hover { 
+                width: 50px; height: 50px; background-color: rgba(255,255,255,0.2);
+                 }
                 
                 ::-webkit-scrollbar { 
                 width: 8px;
@@ -359,6 +401,7 @@ export default function App() {
                 <ExpRoyalCoCardSection />
                 <SkillsSection />
                 <ProjectsSection />
+                <Footer/>
             </main>
 
         </>
