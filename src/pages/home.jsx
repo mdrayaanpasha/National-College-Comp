@@ -265,6 +265,9 @@ const SkillsSection = () => {
 const Footer = ()=>{
     return(
         <footer>
+            <center>
+            <hr className='text-neutral-500 text-center w-[80vw] flex items-center justify-center' />
+            </center>
             <div className="py-28 px-6 sm:px-8 bg-neutral-950 overflow-hidden text-white text-center">
                 <h1 className="text-4xl font-serif">Thank You For Your Time :)</h1>
                  <div className='flex items-center justify-center gap-5'>
